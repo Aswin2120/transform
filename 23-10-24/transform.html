@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box1{
+        height: 200px;
+        width: 200px;
+        background-color: beige;
+        margin-left: 200px;
+        margin-top: 200px;
+        border: 2px solid;
+        animation: box 5s  infinite;
+        text-align: center;
+        animation-play-state: paused;
+    }
+    .box1:hover{
+        animation-play-state: running;
+    }
+    @keyframes box{
+        0%{transform: skewX(0%);}
+        100%{transform: skewX(10deg);}
+    }
+</style>
+<body>
+    <div class="box1">box</div>
+</body>
+</html>
